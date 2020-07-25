@@ -28,12 +28,12 @@ attr_accessor :name, :artist, :genre
   end
     
   def self.genre_count
-    genre_ count={}
+    count={}
     @@genres.each do |genre|
-     genre_count[genre] ||= 0
-     genre_count[genre] += 1
+     count[genre] ||= 0
+     count[genre] += 1
     end
-  genre_count
+  count
  end
 
 end
